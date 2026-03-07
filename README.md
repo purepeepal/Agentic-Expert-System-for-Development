@@ -43,6 +43,7 @@ We don't believe in silver bullets. To use this system effectively, you must und
 - **Increased Latency:** The parliamentary debate process takes time; strategic, multi-agent responses are inherently slower than simple "write this code" commands.
 - **Setup Overhead:** Requires an upfront effort to populate the `Knowledge-Vault` and define your project's Initiative Compass to be truly effective.
 - **Context Window Constraints:** Highly complex or extended debates can eventually maximize available context limits, requiring strict adherence to the included `/Session-Wise Build Planning` workflows.
+- **Automated Memory Pollution:** While the `/Librarian - Memory Consolidation` workflow saves tokens by surgically appending context, an AI hallucination during logging can accidentally permanently write flawed architectural decisions into your `Knowledge-Vault`. Regular human audits of the Vault are heavily advised.
 
 ---
 
@@ -154,3 +155,4 @@ The 13 Core Domains natively cover universal development. But if you are buildin
 
 ---
 *Built for the builder who wants their AI to think harder, think broader, and refuse to settle for the median answer.*
+
