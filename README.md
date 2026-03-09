@@ -155,4 +155,3 @@ The 13 Core Domains natively cover universal development. But if you are buildin
 
 ---
 *Built for the builder who wants their AI to think harder, think broader, and refuse to settle for the median answer.*
-
