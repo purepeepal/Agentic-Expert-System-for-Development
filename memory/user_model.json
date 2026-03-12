@@ -1,0 +1,16 @@
+{
+  "user_model": {
+    "decision_patterns": [],
+    "approval_signals": [],
+    "rejection_signals": [],
+    "correction_patterns": [],
+    "communication_preferences": {
+      "detail_level": null,
+      "format": null,
+      "decision_format": null,
+      "question_tolerance": null
+    },
+    "quality_axes": [],
+    "anti_preferences": []
+  }
+}
