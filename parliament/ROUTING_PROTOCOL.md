@@ -100,6 +100,7 @@ User Query
 | [domains/D11_devops.md](../domains/D11_devops.md) | Compressed: CI/CD, monitoring, DevOps | Layer 1 — always loaded |
 | [domains/D12_complexity.md](../domains/D12_complexity.md) | Compressed: Simplification, technical debt | Layer 1 — always loaded |
 | [domains/D13_unconventional.md](../domains/D13_unconventional.md) | Compressed: Creative disruption, anti-slop | Layer 1 — always loaded |
+| [domains/cross_domain_matrix.md](../domains/cross_domain_matrix.md) | CDRS calibration: 20 high-frequency domain pairs, Quadrant A/B/C conflict map, baseline CDRS by primary domain | Step 2b — read during CDRS computation |
 | [parliament/Domain_01_Strategy.md](Domain_01_Strategy.md) | Full: Project Strategy & Viability | Layer 1.5 (primary) or Layer 2 |
 | [parliament/Domain_02_Ecosystem.md](Domain_02_Ecosystem.md) | Full: Ecosystem & Competitive Intelligence | Layer 1.5 (primary) or Layer 2 |
 | [parliament/Domain_03_Infrastructure.md](Domain_03_Infrastructure.md) | Full: Infrastructure & Architecture | Layer 1.5 (primary) or Layer 2 |

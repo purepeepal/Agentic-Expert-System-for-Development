@@ -21,7 +21,7 @@ The result is **Collective Intelligence**: advice that is broader, deeper, and m
 
 ---
 
-### 🎓 THE TEXTBOOK: HOW IT WORKS
+### 🎓 HOW IT WORKS
 
 Behind the curtain, the system uses a sophisticated but simple **Tiered Reasoning System**. It optimizes how information is fed to your AI to ensure maximum depth without wasting resources.
 
@@ -87,6 +87,122 @@ The system builds a **Knowledge Vault** for your project.
 
 #### Extending the Parliament
 You can create your own specialized domains (e.g., a "Legal Compliance" or "Gaming Physics" expert) by following the template in `parliament/Custom-Agents/`. The system will automatically recognize and integrate them into the debate.
+
+## What You Get
+
+- Every AI prompt routed through multi-perspective analysis
+- Cross-domain trade-off surfacing (security checks your infrastructure, complexity checks your architecture)
+- Persistent memory that makes the system smarter for YOUR project over time
+- Wildcard perspectives that challenge generic AI advice
+- Works with any IDE agent that reads markdown (VS Code Copilot, Cursor, Claude Code, JetBrains AI)
+
+---
+
+## Quick Start
+
+1. Copy this folder into your project root
+2. Tell your IDE agent to use the workflow: point it at `.agents/workflows/Expert system.md`
+3. Ask any development question — the system handles everything else
+
+---
+
+## How It Works
+
+| Layer | What Loads | Token Cost | When Used | Recommended Model |
+|-------|-----------|------------|-----------|-------------------|
+| **Layer 1** | 13 compressed domain experts | ~8K tokens | Simple queries (CDRS < 3) | Any model (7B+, Haiku) |
+| **Layer 1.5** | Compressed experts + 1 full domain deep-dive | ~28K tokens | Default for most queries (CDRS 3-5) | Sonnet |
+| **Layer 2** | Full 78-perspective parliamentary debate | ~50-75K tokens | Major decisions, strategic pivots (CDRS >= 6) | Opus |
+
+**CDRS** (Cross-Domain Risk Score): The orchestrator scans your query against override triggers in all 13 domains. The count of triggered domains determines which layer handles your query.
+
+**Memory**: Decisions, directives, and user preferences persist across sessions in JSON files under `memory/`. The system gets smarter the more you use it.
+
+---
+
+## Directory Structure
+
+```
+├── .agents/
+│   └── workflows/
+│       └── Expert system.md            ← Workflow orchestrator (entry point)
+├── domains/
+│   ├── D01_strategy.md                 ← Compressed: Startup Strategy
+│   ├── D02_ecosystem.md                ← Compressed: Market Intelligence
+│   ├── D03_infrastructure.md           ← Compressed: Infrastructure
+│   ├── D04_cognition.md                ← Compressed: Developer Cognition
+│   ├── D05_ai_integration.md           ← Compressed: AI Integration
+│   ├── D06_product_design.md           ← Compressed: Product Design
+│   ├── D07_open_source.md              ← Compressed: Open Source
+│   ├── D08_systems_ux.md               ← Compressed: Systems UX
+│   ├── D09_mathematics.md              ← Compressed: Mathematics & Algorithms
+│   ├── D10_security.md                 ← Compressed: Security
+│   ├── D11_devops.md                   ← Compressed: Internal Systems & DevOps
+│   ├── D12_complexity.md               ← Compressed: Complexity Reduction
+│   └── D13_unconventional.md           ← Compressed: Unconventional Strategies
+├── memory/
+│   ├── decisions.json                  ← Domain-tagged decisions with rationale
+│   ├── directives.json                 ← Scoped standing orders
+│   ├── user_model.json                 ← Learned user preferences
+│   ├── changelog.md                    ← Append-only audit trail
+│   └── session_context.md              ← Multi-turn coherence checkpoints
+├── parliament/
+│   ├── SYSTEM_MANIFESTO.md             ← Core principles and architecture
+│   ├── HANDLER_AGENT.md                ← Parliamentary debate orchestrator
+│   ├── ROUTING_PROTOCOL.md             ← Domain routing and escalation rules
+│   ├── Domain_01_Strategy.md           ← Full: Startup Strategy (6 perspectives)
+│   ├── Domain_02_Ecosystem.md          ← Full: Market Intelligence
+│   ├── Domain_03_Infrastructure.md     ← Full: Infrastructure
+│   ├── Domain_04_Cognition.md          ← Full: Developer Cognition
+│   ├── Domain_05_AI_Integration.md     ← Full: AI Integration
+│   ├── Domain_06_Product_Design.md     ← Full: Product Design
+│   ├── Domain_07_Open_Source.md        ← Full: Open Source
+│   ├── Domain_08_Systems_UX.md         ← Full: Systems UX
+│   ├── Domain_09_Mathematics.md        ← Full: Mathematics & Algorithms
+│   ├── Domain_10_Security.md           ← Full: Security
+│   ├── Domain_11_DevOps.md             ← Full: Internal Systems & DevOps
+│   ├── Domain_12_Complexity.md         ← Full: Complexity Reduction
+│   ├── Domain_13_Unconventional.md     ← Full: Unconventional Strategies
+│   └── Custom-Agents/                  ← Project-specific domain experts
+│       ├── AGENT_REGISTRY.md
+│       └── CUSTOM_AGENT_TEMPLATE.md
+├── initiative-compass.md               ← Living project compass (auto-populated)
+├── DISTILL.md                          ← Domain re-compression guide
+└── README.md                           ← This file
+```
+
+**40 files total** — no database, no API keys, no build step.
+
+---
+
+## Customization
+
+- **Adding custom domain agents:** Follow the template in `parliament/Custom-Agents/CUSTOM_AGENT_TEMPLATE.md`
+- **Modifying compressed domains:** See `DISTILL.md` for the re-compression process
+- **Initiative compass:** Auto-populated on first contact with a project, editable anytime at `initiative-compass.md`
+
+---
+
+## Cost Estimates
+
+| Layer | Model | Tokens/Query | Cost/Query | Monthly (50q/day) |
+|-------|-------|-------------|------------|--------------------|
+| Layer 1 | Any (7B+, Haiku) | ~8,000 | ~$0.002 | ~$3 |
+| Layer 1.5 | Sonnet | ~28,000 | ~$0.07 | ~$100 |
+| Layer 2 | Opus | ~50-75,000 | ~$0.25 | ~$375 |
+| **Mixed (typical)** | Mixed | — | — | **~$10** |
+
+Most queries resolve at Layer 1 or 1.5. Layer 2 is reserved for major architectural decisions.
+
+---
+
+## Portability
+
+- No external dependencies
+- No database, no API keys, no build step
+- Memory starts empty — fresh for every project
+- Works offline with local models (Layer 1 and 1.5)
+- Pure markdown — works with any IDE agent that reads `.md` files
 
 ---
 

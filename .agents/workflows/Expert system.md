@@ -49,6 +49,8 @@ Match the query topic to the primary domain using this routing table:
 
 Read ALL 13 compressed domain files from `domains/`. For each non-primary domain, check if any of its **Cross-Domain Override Triggers** match the query topic. Count matching domains.
 
+Also read `domains/cross_domain_matrix.md`. Use the **Baseline CDRS by Primary Domain** table to pre-calibrate before completing full trigger scanning. If the primary domain is D03 or D05, default to Layer 1.5 immediately — these domains reach CDRS ≥ 3 in nearly every case. Use the Quadrant A/B/C pair tables to identify which non-primary domains are most likely to fire and verify those first.
+
 ```
 CDRS = count of non-primary domains with matching override triggers
 ```
