@@ -1,16 +1,25 @@
-# Agentic Expert System for Development
+# 🏛️ THE AGENTIC EXPERT SYSTEM [v4.0]
 
-78 perspectives. 13 domains. 1 parliament. Drop this into any project.
+**78 Perspectives. 13 Domains. 1 Parliament. Zero Dependencies.**
+
+The Agentic Expert System is a universal development orchestration layer that transforms any AI model into a high-performance specialized parliament.
 
 ---
 
-## What You Get
+### 📖 EXPLORE THE SYSTEM
 
-- **Every AI prompt routed through multi-perspective analysis** — no more single-viewpoint answers
-- **Cross-domain trade-off surfacing** — security checks your infrastructure, complexity checks your architecture, cognition checks your UX
-- **Persistent memory** that makes the system smarter for YOUR project over time — decisions, directives, and preferences survive across sessions
-- **Wildcard perspectives** that challenge generic AI advice — each domain has a mandatory contrarian voice
-- **Works with any IDE agent that reads markdown** — VS Code Copilot, Cursor, Claude Code, JetBrains AI, or any agent mode that supports workflow files
+- **[The Vision (MARKETING.md)](MARKETING.md)** — Why use this? High-level benefits, the "Wow" factor, and universal portability.
+- **[The Technical Guide (TEXTBOOK.md)](TEXTBOOK.md)** — How does it work? Architecture E, Tiered Reasoning, PDRS, and Context Optimization.
+- **[The Operations Manual (parliament/SYSTEM_MANIFESTO.md)](parliament/SYSTEM_MANIFESTO.md)** — Core identity, parliamentary procedures, and standards.
+
+---
+
+### 🚀 WHY v4?
+
+- **Model Agnostic**: Works with Claude, GPT, O1, DeepSeek, Llama, and local models.
+- **Architecture E**: 90% cost reduction vs v3 via tiered reasoning.
+- **Persistent Memory**: The Knowledge Vault keeps your project smarter across sessions.
+- **Drop-in Deployment**: No API keys, no databases, no setup. Just markdown.
 
 ---
 
