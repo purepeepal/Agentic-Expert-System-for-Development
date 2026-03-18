@@ -85,6 +85,15 @@ The system builds a **Knowledge Vault** for your project.
 2. Point your AI agent at the workflow file: `.agents/workflows/Expert system.md`.
 3. Start the session.
 
+#### Upgrading from v3 (Knowledge Migration)
+If your project uses the legacy markdown-based `Knowledge-Vault` from v3, you must migrate it to the new v4 JSON `memory` architecture to retain your project's context.
+1. **Run the migration:** Point your AI agent to the **`/migrate-knowledge`** workflow (`.agents/workflows/migrate-knowledge.md`), or execute the script directly:
+   ```powershell
+   powershell.exe -ExecutionPolicy Bypass -File ".agents\scripts\migrate_knowledge_to_memory.ps1" -SourcePath "Knowledge-Vault" -TargetPath "memory"
+   ```
+2. **Verify:** Check the console output and `memory/changelog.md` to ensure all decisions and directives transferred successfully.
+3. **Deprecate:** Your old `Knowledge-Vault` is now deprecated. Keep it as a backup, but all future intelligence will be written to the `memory/` directory.
+
 #### Extending the Parliament
 You can create your own specialized domains (e.g., a "Legal Compliance" or "Gaming Physics" expert) by following the template in `parliament/Custom-Agents/`. The system will automatically recognize and integrate them into the debate.
 
@@ -125,7 +134,8 @@ You can create your own specialized domains (e.g., a "Legal Compliance" or "Gami
 ```
 ├── .agents/
 │   └── workflows/
-│       └── Expert system.md            ← Workflow orchestrator (entry point)
+│       ├── Expert system.md            ← Workflow orchestrator (entry point)
+│       └── migrate-knowledge.md        ← v3 to v4 migration workflow
 ├── domains/
 │   ├── D01_strategy.md                 ← Compressed: Startup Strategy
 │   ├── D02_ecosystem.md                ← Compressed: Market Intelligence
