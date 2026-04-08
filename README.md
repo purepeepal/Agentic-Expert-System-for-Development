@@ -205,33 +205,6 @@ If you have legacy markdown “knowledge vault” files and want to migrate them
 
 ---
 
-## Documentation Quality Gate (Domain 13)
-
-This README is intentionally optimized for three audiences at once:
-
-- **“Is this for me?”** (marketing / positioning)
-- **“How do I use it today?”** (instructional quickstart)
-- **“How is it structured and extended?”** (technical reference)
-
-Domain 13 veto checks applied:
-
-- **No jargon without definitions:** A glossary is included.
-- **TTFSA ≤ 10 minutes:** Quickstart is designed to complete in ~5 minutes.
-- **Claims are locally verifiable:** Key sources are listed under “Ground Truth & Receipts”.
-- **Audience intent is explicit:** Sections are labeled by purpose.
-
-7-role review summary (how the content was scrutinized):
-
-- **Vision Anchor:** Prioritized clarity + truthful positioning over hype.
-- **Novel Creator:** Added a fast onboarding flow and “Tips & Tricks” to make this practical.
-- **Deep Researcher:** Grounded descriptions in the orchestrator + manifesto + routing protocol.
-- **Future-Proofing Visionary:** Kept structure scan-friendly and retrieval-friendly.
-- **Destroyer:** Flagged path inconsistencies; mitigated with the quickstart “compass path” note.
-- **Maintainer:** Kept operational instructions minimal and linked to the canonical files.
-- **Wildcard (minority view):** “This could be a single diagram + one command.” Majority chose text-first to reduce ambiguity for new users.
-
----
-
 ## Glossary (So you don’t get jargon-locked)
 
 - **AES**: Agentic Expert System
