@@ -142,7 +142,7 @@ Every stage has a defined input contract (what it consumes) and output contract 
 | | Contract |
 |---|---|
 | **Consumes** | `requirements.md` |
-| **Produces** | `customization.md` with: Domain Analysis, Custom Agent Specs (D14+), Knowledge Distillations, Integration Plan; updates to `AGENT_REGISTRY.md` |
+| **Produces** | `customization.md` with: Domain Analysis, Custom Agent Specs (C1+), Knowledge Distillations, Integration Plan; updates to `AGENT_REGISTRY.md` |
 | **Manifest writes** | `pipeline.stages.customization.status`, `artifacts.customization` path, `artifacts.custom_agents[]` |
 | **Gate to next stage** | All custom agents registered; distillations referenced, not inline |
 | **Skip condition** | Simple CRUD, one-off feature, or core domains sufficient — set `status: skipped` |

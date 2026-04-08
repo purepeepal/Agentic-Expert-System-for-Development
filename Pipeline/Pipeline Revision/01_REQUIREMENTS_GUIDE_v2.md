@@ -278,12 +278,12 @@ Read requirements.md and determine whether Stage 2 (Customization) is warranted.
 
 Evaluate:
 1. Does this project involve a specialized domain (healthcare, finance, EdTech, IoT, gaming)?
-2. Are there regulatory or compliance requirements the 13 core domains may not cover?
+2. Are there regulatory or compliance requirements the 16 core domains may not cover?
 3. Are there repeated patterns across multiple user stories that should be distilled?
 4. Estimate the ROI of customization: how many future features would benefit?
 
 Produce a recommendation: [Skip Customization | Proceed to Customization]
-If proceeding, list the specific custom agents (D14+) you would create and why.
+If proceeding, list the specific custom agents (C1+) you would create and why.
 ```
 
 ---

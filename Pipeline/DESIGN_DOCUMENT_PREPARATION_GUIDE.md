@@ -59,8 +59,8 @@ When using AES-assisted design, the parliamentary system provides multi-perspect
 **AES Contribution**:
 - **D03 (Infrastructure)**: Architecture patterns, scalability considerations, deployment topology
 - **D08 (Systems UX)**: Information architecture, user flow optimization
-- **D12 (Complexity)**: Simplification opportunities, unnecessary layers to avoid
-- **D13 (Unconventional)**: Creative alternatives to standard patterns
+- **D09 (Logic & Complexity)**: Simplification opportunities, unnecessary layers to avoid
+- **D12 (Unconventional)**: Creative alternatives to standard patterns
 
 **Example AES Output**:
 ```markdown
@@ -71,8 +71,8 @@ When using AES-assisted design, the parliamentary system provides multi-perspect
 
 Based on requirements analysis:
 - D03 Infrastructure recommends: Token-based auth with separate auth/authz layers
-- D12 Complexity flags: Avoid microservices for <10K users, use modular monolith
-- D13 Unconventional suggests: Consider stateless JWT instead of session store for simplicity
+- D09 Logic & Complexity flags: Avoid microservices for <10K users, use modular monolith
+- D12 Unconventional suggests: Consider stateless JWT instead of session store for simplicity
 
 [PLACEHOLDER: Confirm architecture approach or specify alternative]
 
@@ -88,14 +88,14 @@ Based on requirements analysis:
 - **D07 (Open Source)**: Technology recommendations, dependency health checks
 - **D04 (Cognition)**: API naming conventions, error message patterns
 - **D09 (Mathematics)**: Algorithm selection, complexity analysis
-- **D12 (Complexity)**: Module structure simplification
+- **D09 (Logic & Complexity)**: Module structure simplification
 
 ### Section 3: Correctness Properties
 **AES Contribution**:
 - **D09 (Mathematics)**: Formal property identification
 - **D10 (Security)**: Security properties, threat modeling
 - **D07 (Open Source)**: Testing framework recommendations
-- **D13 (Unconventional)**: Non-obvious properties to verify
+- **D12 (Unconventional)**: Non-obvious properties to verify
 
 ### Section 4: Non-Functional Requirements
 **AES Contribution**:
@@ -128,7 +128,7 @@ Before starting your design document, ensure you have:
 - ✅ Knowledge of the technical stack and constraints
 - ✅ Access to any relevant architectural documentation or existing system context
 - ✅ (Optional) Completed customization.md if domain-specific expertise is needed
-- ✅ (Optional) Custom agents registered and available (D14+) for specialized domains
+- ✅ (Optional) Custom agents registered and available (C1+) for specialized domains
 - ✅ (Optional) Access to project memory (initiative compass, past decisions, user model)
 
 ---
@@ -1609,7 +1609,7 @@ Once you've written your design document:
 - Recommend domain-specific improvements (leveraging custom agents)
 
 **Design Generation with Custom Agents**:
-- If customization phase completed, custom agents (D14+) participate in design
+- If customization phase completed, custom agents (C1+) participate in design
 - Specialized domain expertise applied to architecture, API design, security
 - Distilled patterns automatically referenced in recommendations
 - Domain-specific veto conditions enforced
@@ -1646,7 +1646,7 @@ This design document is the third step in the enhanced 5-phase spec-driven devel
 
 **Phase 2: Customization** (Optional - May Be Completed)
 - Domain analysis identified expertise gaps
-- Custom agents created (e.g., D14 Healthcare, D15 Finance)
+- Custom agents created (e.g., C1 Healthcare, C2 Finance)
 - Patterns distilled into reusable knowledge
 - **Impact on Design**: Custom agents participate in design generation, providing specialized domain expertise
 
@@ -1656,7 +1656,7 @@ This design document is the third step in the enhanced 5-phase spec-driven devel
 - Apply distilled patterns from customization
 - Define implementation approach
 - **With Customization**: Design benefits from specialized domain knowledge
-- **Without Customization**: Design uses 13 core domains only
+- **Without Customization**: Design uses 16 core domains only
 
 **Phase 4: Tasks**
 - Break design into implementable tasks
@@ -1675,7 +1675,7 @@ This design document is the third step in the enhanced 5-phase spec-driven devel
 If customization phase was completed, your design generation benefits from:
 
 **Custom Agents Participate**:
-- D14+ agents provide specialized domain expertise
+- C1+ agents provide specialized domain expertise
 - Override triggers activate for domain-specific topics
 - Veto conditions enforce domain requirements
 - Multiple perspectives enrich design decisions
@@ -1685,9 +1685,9 @@ If customization phase was completed, your design generation benefits from:
 - Domain-specific templates guide API design
 - Best practices embedded in recommendations
 
-**Example**: Healthcare project with D14 Healthcare Compliance agent
-- D14 participates in architecture design (HIPAA-compliant infrastructure)
-- D14 validates API design (PHI protection, minimum necessary principle)
+**Example**: Healthcare project with C1 Healthcare Compliance agent
+- C1 participates in architecture design (HIPAA-compliant infrastructure)
+- C1 validates API design (PHI protection, minimum necessary principle)
 - PHI Handling Pattern applied to data model design
 - Audit Trail Pattern guides logging implementation
 
