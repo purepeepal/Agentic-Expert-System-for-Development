@@ -1,0 +1,7 @@
+correction_patterns: []
+communication_preferences:
+  detail_level: null
+  format: null
+  decision_format: null
+  question_tolerance: null
+anti_preferences: []
