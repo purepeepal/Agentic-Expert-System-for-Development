@@ -1397,7 +1397,7 @@ You can:
    - Estimates ROI of customization investment
 
 2. **Skip to design** (if no customization needed): "Generate design from requirements"
-   - Agent uses 13 core domains only
+  - Agent uses 16 core domains only
    - Suitable for standard features
 
 3. **Request requirements review**: "Review requirements for completeness"

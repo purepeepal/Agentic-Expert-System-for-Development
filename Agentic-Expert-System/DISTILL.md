@@ -2,7 +2,7 @@
 
 How to re-generate compressed domain files when parliament/ source files change.
 
-**Domain numbering note:** The core system intentionally uses a non-contiguous domain index. **D12** (Complexity) was merged into **D09 (Logic & Complexity)**. **D14+** is reserved for **project-specific custom agents** and is not part of the 16 universal core domains.
+**Domain numbering note:** The core system intentionally uses a non-contiguous domain index. **D12** (Complexity) was merged into **D09 (Logic & Complexity)**. The **16 universal core domains** remain **D01–D16**. Project-specific custom agents live under `parliament/Custom-Agents/` and are referenced as **C1, C2, C3...** (not as additional D-domains).
 
 ---
 
@@ -110,6 +110,20 @@ Every compressed file must follow this exact structure:
 
 ---
 
+## Custom Agent Distillation (Compressed Custom Domains)
+
+Custom agents can also be "distilled" into compressed references for quick routing. These are stored in `domains/` as **DC** files.
+
+**Naming convention:**
+- Source: `parliament/Custom-Agents/Custom_C1_*.md` → Compressed: `domains/DC1_*.md`
+- Use `DC[N]` to match `C[N]` (e.g., `C3` → `DC3_*`)
+
+**Structure:** Use the same 7-section structure above (Identity → 7-Role Model → Vetoes → Triggers → Prompts → Anchor/Wildcard → Decision Framework), with these additions:
+- In **Identity**, include `**Custom Domain ID:** C[N]` and `**Cluster Affinity:** ...`.
+- Custom distillations MAY retain project-specific triggers/assumptions (they are not required to be universal).
+
+---
+
 ## Validation Checklist
 
 After generating a compressed file, verify:
@@ -119,7 +133,8 @@ After generating a compressed file, verify:
 - [ ] **Override triggers**: At least 4 present, using "Activate when..." format
 - [ ] **Vision Anchor & Wildcard**: Both have named characters and explicit value/challenge instructions
 - [ ] **Perspectives**: Written as reasoning prompts (questions/challenges), NOT declarative rules
-- [ ] **No project-specific content**: File is universal, works for any project
+- [ ] **Core domains only:** No project-specific content (file is universal, works for any project)
+- [ ] **Custom agents only:** Triggers and vetoes remain specific and actionable (do not over-generalize)
 - [ ] **7 sections present**: Identity, 7-Role Model, Vetoes, Triggers, Perspectives, Anchors/Wildcards, Decision Framework
 
 ### Special Cases

@@ -302,14 +302,14 @@ Scenarios:
 Generate a design.md scaffold from requirements.md [and customization.md if provided].
 
 Use the following AES domains for each section:
-- System Architecture: D03 (Infrastructure), D08 (Systems UX), D12 (Complexity), D13 (Unconventional)
-- Data Models: D04 (Cognition), D09 (Mathematics), D12 (Complexity)
+- System Architecture: D03 (Infrastructure), D08 (Systems UX), D09 (Logic & Complexity), D12 (Unconventional)
+- Data Models: D04 (Cognition), D09 (Logic & Complexity)
 - API Design: D03, D04, D08
-- Algorithm Specs: D09 (Mathematics), D05 (AI Integration) [if ML]
+- Algorithm Specs: D09 (Logic & Complexity), D05 (AI Integration) [if ML]
 - Correctness Properties: D09, D10 (Security)
 - Testing Strategy: D07 (Open Source), D09
 - NFRs: D03, D10, D11 (DevOps)
-[If customization.md exists: also apply D14+ agents per their activation conditions]
+[If customization.md exists: also apply custom agents (C1+) per their activation conditions]
 
 Rules:
 - Insert [PLACEHOLDER: decision question] for every decision that requires my input
